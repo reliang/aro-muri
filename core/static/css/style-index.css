@@ -1,0 +1,58 @@
+body {
+    /* background-color: #2c2c2c; */
+    height: 100%;
+    overflow:hidden;
+}
+
+.header-bg {
+    min-width: 100%;
+    max-width: none;
+    height: 110%;
+}
+
+.header-index {
+    position: absolute; /* absolute position ignores css grid */
+    width: 50%;
+    left: 20%;
+    /* center vertically */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.neural1 {
+    position: absolute; /* absolute position ignores css grid */
+    width: 18%;
+    left: 20%;
+}
+
+.neural2 {
+    position: absolute; /* absolute position ignores css grid */
+    width: 18%;
+    left: 60%;
+    bottom: 6%;
+}
+
+.child-graphic {
+    position: absolute; /* absolute position ignores css grid */
+    width: 38%;
+    right: -15%;
+    /* center vertically */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logos {
+    position: absolute; /* absolute position ignores css grid */
+    width: 50%;
+    left: 2%;
+    bottom: 2%;
+}
+
+nav a, a:visited {
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover, a:active {
+    color: #75eceb;
+    text-decoration: none;
+}
