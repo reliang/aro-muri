@@ -15,6 +15,15 @@ h4.display-4 {
   font-size: 1.5rem;
 }
 
+a, a:visited {
+  color: #007f9f;
+}
+
+a:hover, a:active {
+  color: #66c9c7;
+  text-decoration: none;
+}
+
 p {
   margin-bottom: 2em;
 }
@@ -44,10 +53,25 @@ img {
   max-width:100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
 }
 
-.header-graphic {
+.header-neural1 {
   position: absolute; /* absolute position ignores css grid */
-  width: 15vw;
-  left: 75vw;
+  width: 12vw;
+  left: 18vw;
+  top: -5.5vw;
+}
+
+.header-neural2 {
+  position: absolute; /* absolute position ignores css grid */
+  width: 10vw;
+  left: 62vw;
+  top: 8vw;
+}
+
+.header-shield {
+  position: absolute; /* absolute position ignores css grid */
+  width: 18vw;
+  left: 71vw;
+  top: 1.5vw;
 }
 
 .nav-container {
@@ -65,11 +89,11 @@ nav {
   margin-left: 4vw;
 }
 
-nav a, a:visited {
+nav a, nav a:visited {
   color: rgba(0, 0, 0);
 }
 
-nav a:hover, a:active {
+nav a:hover, nav a:active {
   color: #00566b;
   text-decoration: none;
 }
@@ -126,3 +150,5 @@ section {
   /* in order: x offset, y offset, blur size, spread size, color */
   /* blur size and spread size are optional (they default to 0) */
 }
+
+

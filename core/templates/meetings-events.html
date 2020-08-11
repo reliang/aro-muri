@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARO-MURI</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Custom-->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <img class="header-bg" src="static/images/title-bg.png">
+    <img class="header-neural1" src="static/images/child-graphic-02.png">
+    <img class="header-neural2" src="static/images/child-graphic-13-gradient.png">
+    <img class="header-shield" src="static/images/logo-final.png">
+    <a class="header-title" href="index"><img src="static/images/title-block-no-bg.png"></a>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="overview">Project Overview</a></li>
+                <li><a href="people">People</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Paper</a></li>
+                <li><a href="events" class="nav-selected display-4">Meetings/ Events</a></li>
+                <li><a href="reading-group">Reading Group</a></li>
+                <li><a href="#">Internal Discussion</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <h1 class="display-4">Meetings/Events</h1>
+        <hr class="mb-5">
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h4 class="display-4 mb-4">ARO-MURI Kickoff Meeting</h4>
+                <p>Date: June 30, 2020</p>
+                <p>Time: 9 AM - 12:30 PM</p>
+                <p>Location: Remote</p>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h4 class="display-4 mb-4">Internal Prep Meeting (for MURI Kickoff)</h4>
+                <p>Date: May 21, 2020</p>
+                <p>Time: 3 PM - 4 PM</p>
+                <p>Location: Remote</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+</html>

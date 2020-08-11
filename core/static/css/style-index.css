@@ -13,32 +13,50 @@ body {
 .header-index {
     position: absolute; /* absolute position ignores css grid */
     width: 50%;
-    left: 20%;
     /* center vertically */
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+}
+
+.neural-shield {
+    position: absolute; /* absolute position ignores css grid */
+    width: 9%;
+    top: 0%;
+    left: 20%;
 }
 
 .neural1 {
     position: absolute; /* absolute position ignores css grid */
-    width: 18%;
-    left: 20%;
+    width: 17%;
+    top: 5%;
+    left: 18%;
 }
 
 .neural2 {
     position: absolute; /* absolute position ignores css grid */
-    width: 18%;
-    left: 60%;
+    width: 17%;
+    left: 62%;
     bottom: 6%;
+    transform: rotate(-20deg);
+}
+
+.numbers {
+    position: absolute; /* absolute position ignores css grid */
+    width: 60%;
+    right: -15%;
+    opacity: 50%;
 }
 
 .child-graphic {
     position: absolute; /* absolute position ignores css grid */
     width: 38%;
+    /* width: 45%; */
     right: -15%;
     /* center vertically */
     top: 50%;
     transform: translateY(-50%);
+    /* bottom: -20vw; */
 }
 
 .logos {
@@ -48,11 +66,11 @@ body {
     bottom: 2%;
 }
 
-nav a, a:visited {
+nav a, nav a:visited {
     color: rgb(255, 255, 255);
 }
 
-nav a:hover, a:active {
+nav a:hover, nav a:active {
     color: #75eceb;
     text-decoration: none;
 }

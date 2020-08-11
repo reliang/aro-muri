@@ -18,6 +18,8 @@ from django.urls import path
 from core.views import index
 from core.views import overview
 from core.views import people
+from core.views import events
+from core.views import readingGroup
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +27,7 @@ urlpatterns = [
     path('index', index, name='index'),
     path('overview', overview, name='overview'),
     path('people', people, name='people'),
+    path('events', events, name='events'),
+    path('reading-group', readingGroup, name='reading-group'),
 
 ]

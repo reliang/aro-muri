@@ -10,3 +10,9 @@ def overview(request):
 
 def people(request):
 	return render(request, "people.html", {})
+
+def events(request):
+    return render(request, "meetings-events.html", {})
+
+def readingGroup(request):
+    return render(request, "reading-group.html", {})
