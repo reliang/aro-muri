@@ -14,49 +14,105 @@
     <!--Custom-->
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- AddEvent script -->
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+    <!-- AddEvent theme css -->
+    <link rel="stylesheet" href="{% static 'css/add-event-btn.css' %}" type="text/css" media="screen" />
 </head>
 
 <body>
-    <img class="header-bg" src="static/images/title-bg.png">
-    <img class="header-neural1" src="static/images/child-graphic-02.png">
-    <img class="header-neural2" src="static/images/child-graphic-13-gradient.png">
-    <img class="header-shield" src="static/images/logo-final.png">
-    <a class="header-title" href="index"><img src="static/images/title-block-no-bg.png"></a>
-    <div class="nav-container">
-        <nav>
-            <ul>
-                <li><a href="overview">Project Overview</a></li>
-                <li><a href="people">People</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Paper</a></li>
-                <li><a href="events" class="nav-selected display-4">Meetings/ Events</a></li>
-                <li><a href="reading-group">Reading Group</a></li>
-                <li><a href="#">Internal Discussion</a></li>
-            </ul>
-        </nav>
+    <div class="page-grid">
+        <img class="header-bg" src="static/images/title-bg.png">
+        <img class="header-neural1" src="static/images/child-graphic-02.png">
+        <img class="header-neural2" src="static/images/child-graphic-13-gradient.png">
+        <img class="header-shield" src="static/images/logo-final.png">
+        <a class="header-title" href="index"><img src="static/images/title-block-no-bg.png"></a>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="overview">Project Overview</a></li>
+                    <li><a href="people">People</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Paper</a></li>
+                    <li><a href="events" class="nav-selected display-4">Meetings/ Events</a></li>
+                    <li><a href="reading-group">Reading Group</a></li>
+                    <li><a href="#">Internal Discussion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <h1 class="display-4">Meetings/Events</h1>
+            <hr class="mb-5">
+
+            <div class="card shadow mb-4">
+                <div class="card-body pl-5 pr-5">
+                    <h4 class="display-4 mb-4">ARO-MURI Kickoff Meeting</h4>
+                    <p><img class="symbol" src="static/images/events/icon_calendar.png">June 30, 2020</p>
+                    <p><img class="symbol" src="static/images/events/icon_time.png">9 AM - 12:30 PM</p>
+                    <p><img class="symbol" src="static/images/events/icon_location.png">Remote</p>
+                    <!-- Button code -->
+                    <div class="button-container">
+                        <div title="Add to Calendar" class="addeventatc" data-styling="none">
+                            Add to Calendar
+                            <span class="start">06/30/2020 09:00 AM</span>
+                            <span class="end">06/30/2020 12:30 PM</span>
+                            <span class="timezone">America/New_York</span>
+                            <span class="title">ARO-MURI Kickoff Meeting</span>
+                            <span class="location">Remote</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-body pl-5 pr-5">
+                    <h4 class="display-4 mb-4">Internal Prep Meeting (for MURI Kickoff)</h4>
+                    <p><img class="symbol" src="static/images/events/icon_calendar.png">May 21, 2020</p>
+                    <p><img class="symbol" src="static/images/events/icon_time.png">3 PM - 4 PM</p>
+                    <p><img class="symbol" src="static/images/events/icon_location.png">Remote</p>
+                    <!-- Button code -->
+                    <div class="button-container">
+                        <div title="Add to Calendar" class="addeventatc" data-styling="none">
+                            Add to Calendar
+                            <span class="start">05/21/2020 03:00 PM</span>
+                            <span class="end">05/21/2020 04:00 PM</span>
+                            <span class="timezone">America/New_York</span>
+                            <span class="title">Internal Prep Meeting (for MURI Kickoff)</span>
+                            <span class="location">Remote</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </div>
-    <section>
-        <h1 class="display-4">Meetings/Events</h1>
-        <hr class="mb-5">
 
-        <div class="card shadow mb-4">
-            <div class="card-body">
-                <h4 class="display-4 mb-4">ARO-MURI Kickoff Meeting</h4>
-                <p>Date: June 30, 2020</p>
-                <p>Time: 9 AM - 12:30 PM</p>
-                <p>Location: Remote</p>
+    <footer>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    University of Pennsylvania<br />
+                    3330 Walnut Street<br />
+                    Levine Hall Room 302<br />
+                    Philadelphia, PA 19104
+                </div>
+                <div class="col-md-4 mb-4">
+                    (215) 898-8543<br />
+                    Contact: mailto:wng@cis.upenn.edu
+                </div>
+                <div class="col-md-4 mb-4">
+                    Copyright &#169; 2020 PRECISE<br />
+                    All Rights Reserved.
+                </div>
+            </div>
+            <div class="row">
+                <img style="width: 100%; max-width: 700px;" src="static/images/Logos-white.png">
             </div>
         </div>
-
-        <div class="card shadow mb-4">
-            <div class="card-body">
-                <h4 class="display-4 mb-4">Internal Prep Meeting (for MURI Kickoff)</h4>
-                <p>Date: May 21, 2020</p>
-                <p>Time: 3 PM - 4 PM</p>
-                <p>Location: Remote</p>
-            </div>
-        </div>
-    </section>
+    </footer>
 </body>
 
 

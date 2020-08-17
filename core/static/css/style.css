@@ -1,8 +1,12 @@
 /* use CSS grid to section content vs nav/header */
 body {
   /*font-family: 'Nanum Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+  
+}
+
+.page-grid {
   display: grid;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: auto;
   column-gap: 2%;
 }
@@ -75,18 +79,18 @@ img {
 }
 
 .nav-container {
-  position: fixed; /* fixed position ignores css grid */
-  width: 20%; /* account for width of first column */
-  left: 0;
-  top: 0;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%; /* account for width of first column */
 }
 
 /* The actual timeline (the vertical ruler) */
 nav {
-  position: relative;
-  margin: 0 auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  margin: 0 0 8vmax 4vw;
   padding-top: 12.5vmax;
-  margin-left: 4vw;
 }
 
 nav a, nav a:visited {
@@ -141,6 +145,7 @@ nav li::before {
 section {
   grid-column: 2;
   grid-row: 1;
+  width: 100%;
   margin-top: 18vmax; /* account for header */
   margin-bottom: 8vmax;
 }
@@ -151,4 +156,39 @@ section {
   /* blur size and spread size are optional (they default to 0) */
 }
 
+.button {
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 0.1rem 34px;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
 
+a.button, a:visited.button {
+  color: black;
+}
+
+a:hover.button, a:active.button {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.symbol {
+  height: 1rem; 
+  width: auto; 
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+footer {
+  width: 100%;
+  padding: 4rem;
+  color: white;
+  background-color: black;
+}
