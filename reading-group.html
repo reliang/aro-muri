@@ -12,27 +12,26 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!--Custom-->
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <div class="page-grid">
-        <img class="header-bg" src="static/images/title-bg.png">
-        <img class="header-neural1" src="static/images/child-graphic-02.png">
-        <img class="header-neural2" src="static/images/child-graphic-13-gradient.png">
-        <img class="header-shield" src="static/images/logo-final.png">
-        <a class="header-title" href="index"><img src="static/images/title-block-no-bg.png"></a>
+        <img class="header-bg" src="images/title-bg.png">
+        <img class="header-neural1" src="images/child-graphic-02.png">
+        <img class="header-neural2" src="images/child-graphic-13-gradient.png">
+        <img class="header-shield" src="images/logo-final.png">
+        <a class="header-title" href="index.html"><img src="images/title-block-no-bg.png"></a>
         <div class="nav-container">
             <nav>
                 <ul>
-                    <li><a href="overview">Project Overview</a></li>
-                    <li><a href="people">People</a></li>
+                    <li><a href="overview.html">Project Overview</a></li>
+                    <li><a href="people.html">People</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Paper</a></li>
-                    <li><a href="events">Meetings/Events</a></li>
-                    <li><a href="reading-group" class="nav-selected display-4">Reading Group</a></li>
-                    <li><a href="#">Internal Discussion</a></li>
+                    <li><a href="events.html">Meetings/Events</a></li>
+                    <li><a href="reading-group.html" class="nav-selected display-4">Reading Group</a></li>
+                    <li><a href="internal-discussion.html">Internal Discussion</a></li>
                 </ul>
             </nav>
         </div>
@@ -262,24 +261,30 @@
 
     <footer>
         <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-4 mb-4">
-                    University of Pennsylvania<br />
-                    3330 Walnut Street<br />
-                    Levine Hall Room 302<br />
-                    Philadelphia, PA 19104
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="lead">
+                        University of Pennsylvania<br />
+                        3330 Walnut Street<br />
+                        Levine Hall Room 302<br />
+                        Philadelphia, PA 19104
+                    </p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    (215) 898-8543<br />
-                    Contact: mailto:wng@cis.upenn.edu
+                <div class="col-md-4">
+                    <p class="lead">
+                        (215) 898-8543<br />
+                        Contact: mailto:wng@cis.upenn.edu
+                    </p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    Copyright &#169; 2020 PRECISE<br />
-                    All Rights Reserved.
+                <div class="col-md-4">
+                    <p class="lead">
+                        Copyright &#169; 2020 PRECISE<br />
+                        All Rights Reserved.
+                    </p>
                 </div>
             </div>
             <div class="row">
-                <img style="width: 100%; max-width: 700px;" src="static/images/Logos-white.png">
+                <img style="width: 100%; max-width: 700px;" src="images/Logos-white.png">
             </div>
         </div>
     </footer>
