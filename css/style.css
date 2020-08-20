@@ -30,6 +30,11 @@ a:active {
 
 p {
     margin-bottom: 2em;
+    font-weight: 200;
+}
+
+li, table {
+    font-weight: 200;
 }
 
 .content {
