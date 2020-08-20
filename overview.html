@@ -1,216 +1,219 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>ARO-MURI</title>
 
-<head>
-    <title>ARO-MURI</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
 
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!--Custom-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
 
-    <!--Custom-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+    <style>
+        .arrow {
+            position: absolute;
+            top: 50%;
+            background-color: inherit;
+            border-width: 0;
+            font-size: 20px;
+        }
 
-<style>
-    .arrow {
-        position: absolute;
-        top: 50%;
-        background-color: inherit;
-        border-width: 0;
-        font-size: 20px;
-    }
+        .left {
+            left: 0;
+        }
 
-    .left {
-        left: 0;
-    }
+        .right {
+            right: 0;
+        }
 
-    .right {
-        right: 0;
-    }
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: inherit;
+            border-radius: 50%;
+            border: 1px solid grey;
+            display: inline-block;
+            cursor: pointer;
+        }
 
-    .dot {
-        height: 8px;
-        width: 8px;
-        background-color: inherit;
-        border-radius: 50%;
-        border: 1px solid grey;
-        display: inline-block;
-        cursor: pointer;
-    }
+        .filled {
+            background-color: black;
+            border-color: black;
+        }
+    </style>
 
-    .filled {
-        background-color: black;
-        border-color: black;
-    }
-</style>
+    <body>
+        <div class="page-grid">
+            <img class="header-bg" src="images/title-bg.png" />
+            <img class="header-neural1" src="images/child-graphic-02.png" />
+            <img class="header-neural2" src="images/child-graphic-13-gradient.png" />
+            <img class="header-shield" src="images/logo-final.png" />
+            <a class="header-title" href="index.html"><img src="images/title-block-no-bg.png" /></a>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="overview.html" class="nav-selected display-4">Project Overview</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Paper</a></li>
+                        <li><a href="events.html">Meetings/Events</a></li>
+                        <li><a href="reading-group.html">Reading Group</a></li>
+                        <li><a href="internal-discussion.html">Internal Discussion</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section>
+                <h1 class="display-4">Project Overview</h1>
+                <hr class="mb-5" />
+                <div class="content">
+                    <div class="slideshow-container" style="position: relative;">
+                        <img class="slideshow" src="images/project-overview/Slide4.JPG" />
+                        <img class="slideshow" src="images/project-overview/Slide5.JPG" />
+                        <img class="slideshow" src="images/project-overview/Slide6.JPG" />
+                        <img class="slideshow" src="images/project-overview/Slide7.JPG" />
+                        <img class="slideshow" src="images/project-overview/Slide8.JPG" />
+                        <img class="slideshow" src="images/project-overview/Slide9.JPG" />
+                        <img class="slideshow" src="images/project-overview/Slide10.JPG" />
+                        <button class="arrow left" onclick="plusDivsManual(-1)">&#10094;</button>
+                        <button class="arrow right" onclick="plusDivsManual(1)">&#10095;</button>
+                    </div>
 
-<body>
-    <div class="page-grid">
-        <img class="header-bg" src="images/title-bg.png">
-        <img class="header-neural1" src="images/child-graphic-02.png">
-        <img class="header-neural2" src="images/child-graphic-13-gradient.png">
-        <img class="header-shield" src="images/logo-final.png">
-        <a class="header-title" href="index.html"><img src="images/title-block-no-bg.png"></a>
-        <div class="nav-container">
-            <nav>
-                <ul>
-                    <li><a href="overview.html" class="nav-selected display-4">Project Overview</a></li>
-                    <li><a href="people.html">People</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Paper</a></li>
-                    <li><a href="events.html">Meetings/Events</a></li>
-                    <li><a href="reading-group.html">Reading Group</a></li>
-                    <li><a href="internal-discussion.html">Internal Discussion</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section>
-            <h1 class="display-4">Project Overview</h1>
-            <hr class="mb-5">
-            <div class="content">
-                <div class="slideshow-container" style="position: relative;">
-                    <img class="slideshow" src="images/project-overview/Slide4.JPG">
-                    <img class="slideshow" src="images/project-overview/Slide5.JPG">
-                    <img class="slideshow" src="images/project-overview/Slide6.JPG">
-                    <img class="slideshow" src="images/project-overview/Slide7.JPG">
-                    <img class="slideshow" src="images/project-overview/Slide8.JPG">
-                    <img class="slideshow" src="images/project-overview/Slide9.JPG">
-                    <img class="slideshow" src="images/project-overview/Slide10.JPG">
-                    <button class="arrow left" onclick="plusDivsManual(-1)">&#10094;</button>
-                    <button class="arrow right" onclick="plusDivsManual(1)">&#10095;</button>
-                </div>
+                    <div class="text-center mb-5">
+                        <span class="dot" onclick="currentDiv(1)"></span>
+                        <span class="dot" onclick="currentDiv(2)"></span>
+                        <span class="dot" onclick="currentDiv(3)"></span>
+                        <span class="dot" onclick="currentDiv(4)"></span>
+                        <span class="dot" onclick="currentDiv(5)"></span>
+                        <span class="dot" onclick="currentDiv(6)"></span>
+                        <span class="dot" onclick="currentDiv(7)"></span>
+                    </div>
+                    <script>
+                        var myTimer;
+                        var slideIndex = 1;
 
-                <div class="text-center mb-5">
-                    <span class="dot" onclick='currentDiv(1)'></span>
-                    <span class="dot" onclick='currentDiv(2)'></span>
-                    <span class="dot" onclick='currentDiv(3)'></span>
-                    <span class="dot" onclick='currentDiv(4)'></span>
-                    <span class="dot" onclick='currentDiv(5)'></span>
-                    <span class="dot" onclick='currentDiv(6)'></span>
-                    <span class="dot" onclick='currentDiv(7)'></span>
-                </div>
-                <script>
-                    var myTimer;
-                    var slideIndex = 1;
+                        /* Initialize */
+                        plusDivs(0);
+                        /* Slideshow pause on mouse hover */
+                        var slideshowContainer = document.getElementsByClassName("slideshow-container")[0];
+                        slideshowContainer.addEventListener("mouseenter", pause);
+                        slideshowContainer.addEventListener("mouseleave", resume);
 
-                    /* Initialize */
-                    plusDivs(0);
-                    /* Slideshow pause on mouse hover */
-                    var slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-                    slideshowContainer.addEventListener('mouseenter', pause);
-                    slideshowContainer.addEventListener('mouseleave', resume);
-
-                    function pause() {
-                        clearInterval(myTimer);
-                    }
-
-                    function resume() {
-                        clearInterval(myTimer);
-                        myTimer = setInterval(function () { plusDivs(1) }, 4000);
-                    }
-
-                    function plusDivs(n) {
-                        clearInterval(myTimer);
-                        showDivs(slideIndex += n);
-                        myTimer = setInterval(function () { plusDivs(1) }, 4000);
-                    }
-
-                    function plusDivsManual(n) {
-                        clearInterval(myTimer);
-                        showDivs(slideIndex += n);
-                    }
-
-                    function showDivs(n) {
-                        var i;
-                        var x = document.getElementsByClassName("slideshow");
-                        if (n > x.length) { slideIndex = 1 }
-                        if (n < 1) { slideIndex = x.length };
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
+                        function pause() {
+                            clearInterval(myTimer);
                         }
-                        x[slideIndex - 1].style.display = "block";
 
-                        /* change dot color */
-                        var dots = document.getElementsByClassName("dot");
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" filled", "");
+                        function resume() {
+                            clearInterval(myTimer);
+                            myTimer = setInterval(function () {
+                                plusDivs(1);
+                            }, 4000);
                         }
-                        dots[slideIndex - 1].className += " filled";
-                    }
 
-                    /* function attached to dots */
-                    function currentDiv(n) {
-                        clearInterval(myTimer);
-                        showDivs(slideIndex = n);
-                        myTimer = setInterval(function () { plusDivs(1) }, 4000);
-                    }
-                </script>
-                <p>
-                    This proposal addresses the design and analysis of robust and adaptive machine learning based
-                    on how children learn. Learning systems are vulnerable to adversarial inputs that are malicious
-                    (e.g., image tampering) and non-malicious (e.g., dynamic environments). Moreover, these
-                    adversarial inputs can affect the learning systems at design-time (i.e., in the training data) and
-                    runtime (i.e., in the test data). Providing predictive analytics that deliver intelligent services
-                    in
-                    an adversarial setting requires cross-thrust research addressing fundamental adversarial
-                    learning challenges. First, modern machine learning generally lack adversarial robustness, both
-                    at design-time and run-time, where state-of-the-art approaches tend to perform substantially
-                    worse in the presence of adversarial examples such as sensor noise (e.g., dust on the camera
-                    lens), image transformations (e.g., translations, rotations, and scaling), and distribution shifts
-                    (e.g., daytime images to nighttime images). Second, concepts learned by both children and
-                    learning systems must be robust to adversarial examples in real, large-scale dynamic
-                    environments, requiring new concepts built upon previous knowledge. However, achieving this
-                    improved robustness requires increased reliance on prior concepts (e.g., relational models,
-                    causal models, and shapes) that may also be susceptible to changes in the environment. Third,
-                    safety critical autonomous systems require verifying and monitoring the robustness of concept-
-                    based learning, which is challenging in dynamically evolving systems based on the sensed
-                    environment.
-                </p>
-                <p>
-                    In this project, we aim to develop the foundations for robust and adaptive learning based on
-                    childhood development consisting of three research thrusts: (Thrust I) Concept-based Learning
-                    Robust to Adversarial Examples; (Thrust II) Adaptive Learning in Dynamic Environments; and
-                    (Thrust III) Verification and Monitoring of Learning.
+                        function plusDivs(n) {
+                            clearInterval(myTimer);
+                            showDivs((slideIndex += n));
+                            myTimer = setInterval(function () {
+                                plusDivs(1);
+                            }, 4000);
+                        }
 
-                </p>
-            </div>
-        </section>
-    </div>
+                        function plusDivsManual(n) {
+                            clearInterval(myTimer);
+                            showDivs((slideIndex += n));
+                        }
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="lead">
-                        University of Pennsylvania<br />
-                        3330 Walnut Street<br />
-                        Levine Hall Room 302<br />
-                        Philadelphia, PA 19104
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("slideshow");
+                            if (n > x.length) {
+                                slideIndex = 1;
+                            }
+                            if (n < 1) {
+                                slideIndex = x.length;
+                            }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
+
+                            /* change dot color */
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" filled", "");
+                            }
+                            dots[slideIndex - 1].className += " filled";
+                        }
+
+                        /* function attached to dots */
+                        function currentDiv(n) {
+                            clearInterval(myTimer);
+                            showDivs((slideIndex = n));
+                            myTimer = setInterval(function () {
+                                plusDivs(1);
+                            }, 4000);
+                        }
+                    </script>
+                    <p>
+                        This proposal addresses the design and analysis of robust and adaptive machine learning based on how children learn. Learning
+                        systems are vulnerable to adversarial inputs that are malicious (e.g., image tampering) and non-malicious (e.g., dynamic
+                        environments). Moreover, these adversarial inputs can affect the learning systems at design-time (i.e., in the training data)
+                        and runtime (i.e., in the test data). Providing predictive analytics that deliver intelligent services in an adversarial
+                        setting requires cross-thrust research addressing fundamental adversarial learning challenges. First, modern machine learning
+                        generally lack adversarial robustness, both at design-time and run-time, where state-of-the-art approaches tend to perform
+                        substantially worse in the presence of adversarial examples such as sensor noise (e.g., dust on the camera lens), image
+                        transformations (e.g., translations, rotations, and scaling), and distribution shifts (e.g., daytime images to nighttime
+                        images). Second, concepts learned by both children and learning systems must be robust to adversarial examples in real,
+                        large-scale dynamic environments, requiring new concepts built upon previous knowledge. However, achieving this improved
+                        robustness requires increased reliance on prior concepts (e.g., relational models, causal models, and shapes) that may also be
+                        susceptible to changes in the environment. Third, safety critical autonomous systems require verifying and monitoring the
+                        robustness of concept- based learning, which is challenging in dynamically evolving systems based on the sensed environment.
+                    </p>
+                    <p>
+                        In this project, we aim to develop the foundations for robust and adaptive learning based on childhood development consisting
+                        of three research thrusts: (Thrust I) Concept-based Learning Robust to Adversarial Examples; (Thrust II) Adaptive Learning in
+                        Dynamic Environments; and (Thrust III) Verification and Monitoring of Learning.
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <p class="lead">
-                        (215) 898-8543<br />
-                        Contact: mailto:wng@cis.upenn.edu
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead">
-                        Copyright &#169; 2020 PRECISE<br />
-                        All Rights Reserved.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <img style="width: 100%; max-width: 700px;" src="images/Logos-white.png">
-            </div>
+            </section>
         </div>
-    </footer>
-</body>
 
-
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="lead">
+                            University of Pennsylvania<br />
+                            3330 Walnut Street<br />
+                            Levine Hall Room 302<br />
+                            Philadelphia, PA 19104
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead">
+                            (215) 898-8543<br />
+                            Contact: mailto:wng@cis.upenn.edu
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead">
+                            Copyright &#169; 2020 PRECISE<br />
+                            All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img style="width: 100%; max-width: 700px;" src="images/Logos-white.png" />
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

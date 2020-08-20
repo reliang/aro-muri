@@ -1,195 +1,205 @@
 /* use CSS grid to section content vs nav/header */
 .page-grid {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: auto;
-  column-gap: 2%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    column-gap: 2%;
 }
 
 h1.display-4 {
-  font-size: 3rem;
+    font-size: 3rem;
+    font-weight: 100;
 }
 
 h4.display-4 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
-a, a:visited {
-  color: #007f9f;
+a,
+a:visited {
+    color: #007f9f;
+    font-weight: 200;
 }
 
-a:hover, a:active {
-  color: #66c9c7;
-  text-decoration: none;
+a:hover,
+a:active {
+    color: #66c9c7;
+    text-decoration: none;
 }
 
 p {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .content {
-  line-height: 2;
+    line-height: 2;
 }
 
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .header-bg {
-  position: absolute; /* absolute position ignores css grid */
-  width: 100vw;
-  max-width:100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
-  z-index: -1;
+    position: absolute; /* absolute position ignores css grid */
+    width: 100vw;
+    max-width: 100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
+    z-index: -1;
 }
 
 .header-title {
-  position: absolute; /* absolute position ignores css grid */
-  width: 100vw;
-  max-width:100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
+    position: absolute; /* absolute position ignores css grid */
+    width: 100vw;
+    max-width: 100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
 }
 
 .header-neural1 {
-  position: absolute; /* absolute position ignores css grid */
-  width: 12vw;
-  left: 18vw;
-  top: -5.5vw;
+    position: absolute; /* absolute position ignores css grid */
+    width: 12vw;
+    left: 18vw;
+    top: -5.5vw;
 }
 
 .header-neural2 {
-  position: absolute; /* absolute position ignores css grid */
-  width: 10vw;
-  left: 62vw;
-  top: 8vw;
+    position: absolute; /* absolute position ignores css grid */
+    width: 10vw;
+    left: 62vw;
+    top: 8vw;
 }
 
 .header-shield {
-  position: absolute; /* absolute position ignores css grid */
-  width: 18vw;
-  left: 71vw;
-  top: 1.5vw;
+    position: absolute; /* absolute position ignores css grid */
+    width: 18vw;
+    left: 71vw;
+    top: 1.5vw;
 }
 
 .nav-container {
-  grid-column: 1;
-  grid-row: 1;
-  width: 100%; /* account for width of first column */
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%; /* account for width of first column */
 }
 
 /* The actual timeline (the vertical ruler) */
 nav {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  margin: 0 0 8vmax 4vw;
-  padding-top: 12.5vmax;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    margin: 0 0 8vmax 4vw;
+    padding-top: 12.5vmax;
 }
 
-nav a, nav a:visited {
-  color: rgba(0, 0, 0);
+nav a,
+nav a:visited {
+    color: rgba(0, 0, 0);
 }
 
-nav a:hover, nav a:active {
-  color: #00566b;
-  text-decoration: none;
+nav a:hover,
+nav a:active {
+    color: #00566b;
+    text-decoration: none;
 }
 
 .nav-selected {
-  font-size: 2em;
+    font-size: 2em;
+    font-weight: 100;
 }
 
 /* The actual timeline (the vertical ruler) */
 nav::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: white;
-  border: 1px solid lightgray;
-  top: 0;
-  bottom: 0.5rem;
-  left: 0;
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    border: 1px solid lightgray;
+    top: 0;
+    bottom: 0.5rem;
+    left: 0;
 }
 
 nav ul {
-  list-style-type: none;
-  padding-inline-start: 60px; /* corresponds w/ left of nav li::before */
+    list-style-type: none;
+    padding-inline-start: 60px; /* corresponds w/ left of nav li::before */
 }
 
 nav li {
-  position: relative;
-  line-height: 1;
-  margin-bottom: 3em;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 3em;
 }
 
 /* Create the custom list bullet */
 nav li::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 50px;
-  background-color: white;
-  border: 1px solid lightgray;
-  left: -60px; /* corresponds w/ padding-inlin-start of nav ul, offsets it */
-  top: 55%;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid lightgray;
+    left: -60px; /* corresponds w/ padding-inlin-start of nav ul, offsets it */
+    top: 55%;
 }
 
 section {
-  grid-column: 2;
-  grid-row: 1;
-  width: 100%;
-  margin-top: 18vmax; /* account for header */
-  margin-bottom: 8vmax;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin-top: 18vmax; /* account for header */
+    margin-bottom: 8vmax;
 }
 
 .glow {
-  box-shadow: 0 0 15px 0px #75eceb;
-  /* in order: x offset, y offset, blur size, spread size, color */
-  /* blur size and spread size are optional (they default to 0) */
+    box-shadow: 0 0 15px 0px #75eceb;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
 }
 
 .button {
-  background-color: transparent;
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 0.1rem 34px;
-  margin-bottom: 0.5rem;
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 0.1rem 34px;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
 }
 
-a.button, a:visited.button {
-  color: black;
+a.button,
+a:visited.button {
+    color: black;
 }
 
-a:hover.button, a:active.button {
-  color: white;
-  background-color: black;
-  text-decoration: none;
+a:hover.button,
+a:active.button {
+    color: white;
+    background-color: black;
+    text-decoration: none;
 }
 
 .symbol {
-  height: 1rem; 
-  width: auto; 
-  display: inline-block;
-  margin-right: 1rem;
+    height: 1rem;
+    width: auto;
+    display: inline-block;
+    margin-right: 1rem;
 }
 
 footer {
-  width: 100%;
-  padding: 4rem;
-  color: white;
-  background-color: black;
-  text-align: center;
+    width: 100%;
+    padding: 4rem;
+    color: white;
+    background-color: black;
+    text-align: center;
 }
 
 footer img {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
