@@ -1,0 +1,10 @@
+# Please see https://cets.seas.upenn.edu/answers/auth-pennkey.html
+# for more information on configuring PennKey authentication for websites
+AuthType shibboleth
+ShibRequestSetting requireSession 1
+# Uncomment ONE of the following Require directives
+# PennKey authentication required, any valid PennKey:
+Require shib-session
+# PennKey authentication required, limited to specific PennNames:
+#Require shib-user chip jorey
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SEAS Penn WebLogin Demo</title>
+    </head>
+
+    <body>
+        <h1>SEAS Penn WebLogin Demo</h1>
+        <p>This directory contains a <code>.htaccess</code> file configured for PennKey authentication using Shibboleth.</p>
+        <p>Please see this Answers article for more information:</p>
+        <p style="text-indent: 1em; font-size: 1.2em;">
+            <a href="https://cets.seas.upenn.edu/answers/auth-pennkey.html">How do I require PennKey authentication to access my website?</a>
+        </p>
+
+        <h2>Shibboleth Attributes</h2>
+        <p>The following Shibboleth attributes are available to PHP and CGI scripts:</p>
+
+        <dl>
+            <dt><strong>eppn</strong></dt>
+            <dd>
+                The user's <strong>eduPersonPrincipalName (PennName)</strong>, scoped to upenn.edu, returned as <strong>pennname@upenn.edu</strong>
+            </dd>
+            <dt><strong>pennname</strong></dt>
+            <dd>The user's <strong>eduPersonPrincipalName (PennName)</strong>, equivalent to <strong>REMOTE_USER</strong> on SEAS servers</dd>
+            <dt><strong>employeeNumber</strong></dt>
+            <dd>The user's 8-Digit Penn ID (may be unavailable for new users until record propagates to Shibboleth)</dd>
+            <dt><strong>affiliation</strong></dt>
+            <dd>
+                The user's <strong>eduPersonScopedAffiliation</strong> (affiliation), scoped to upenn.edu, returned separated by semicolons as
+                <strong>affiliation1@upenn.edu;affiliation2@upenn.edu</strong>
+            </dd>
+            <dt><strong>unscoped_affiliation</strong></dt>
+            <dd>
+                The user's <strong>eduPersonAffiliation</strong> (affiliation), returned separated by semicolons as
+                <strong>affiliation1;affiliation2</strong>
+            </dd>
+        </dl>
+
+        <p>
+            The following attributes are modifiable or suppressable by the user and may be blank in some environments. Be prepared to handle missing
+            values in your application. For example, prepopulate form fields with the returned values, but allow the field to be editable by the user.
+        </p>
+
+        <dl>
+            <dt><strong>mail</strong></dt>
+            <dd>
+                The user's <em>public preferred email address</em> from the Penn Directory. In some environments, if there is no public address
+                available (the default for students), this may be blank or replaced with <em>pennanme@upenn.edu</em> (deliverable for many, but not
+                all, Penn recipients).
+            </dd>
+            <dt><strong>displayName</strong></dt>
+            <dd>The user's full name, typically returned in a format similar to <em>"Franklin, Benjamin"</em></dd>
+            <dt><strong>sn</strong></dt>
+            <dd>The user's surname (family name, last name, etc.)</dd>
+            <dt><strong>givenName</strong></dt>
+            <dd>The user's given name (first name)</dd>
+        </dl>
+
+        <p>
+            Consult the
+            <a href="https://www.isc.upenn.edu/how-to/shibboleth-attributes-available-penn">List of Shibboleth attributes available at Penn</a> page
+            for more information.
+        </p>
+
+        <h2>Examples</h2>
+        <p>The following examples demonstrate the environment available to scripts on SEAS servers:</p>
+        <ul>
+            <li><a href="perl.pl">Perl</a></li>
+            <li><a href="python.cgi">Python</a></li>
+            <li><a href="server.php">PHP $_SERVER</a></li>
+            <li><a href="phpinfo.php">PHP (using phpinfo)</a></li>
+        </ul>
+        <p>Please examine the source code of the individual scripts for more information.</p>
+    </body>
+</html>

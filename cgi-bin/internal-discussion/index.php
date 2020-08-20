@@ -15,7 +15,7 @@
         />
 
         <!--Custom-->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
     </head>
 
     <style>
@@ -26,23 +26,23 @@
     </style>
 
     <body>
+
         <div class="page-grid">
-            <img class="header-bg" src="images/title-bg.png" />
-            <img class="header-neural1" src="images/child-graphic-02.png" />
-            <img class="header-neural2" src="images/child-graphic-13-gradient.png" />
-            <img class="header-shield" src="images/logo-final.png" />
-            <a class="header-title" href="index"><img src="images/title-block-no-bg.png" /></a>
+            <img class="header-bg" src="/images/title-bg.png" />
+            <img class="header-neural1" src="/images/child-graphic-02.png" />
+            <img class="header-neural2" src="/images/child-graphic-13-gradient.png" />
+            <img class="header-shield" src="/images/logo-final.png" />
+            <a class="header-title" href="/index.html"><img src="/images/title-block-no-bg.png" /></a>
             <div class="nav-container">
                 <nav>
                     <ul>
-                        <li><a href="overview.html">Project Overview</a></li>
-                        <li><a href="people.html">People</a></li>
+                        <li><a href="/overview.html">Project Overview</a></li>
+                        <li><a href="/people.html">People</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Paper</a></li>
-                        <li><a href="events.html">Meetings/ Events</a></li>
-                        <li><a href="reading-group.html">Reading Group</a></li>
-                        <li>
-                            <a href="internal-discussion.html" class="nav-selected display-4">Internal<br />Discussion</a>
+                        <li><a href="/events.html">Meetings/ Events</a></li>
+                        <li><a href="/reading-group.html">Reading Group</a></li>
+                        <li><a href="/cgi-bin/internal-discussion" class="nav-selected display-4">Internal<br />Discussion</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,37 +51,30 @@
                 <h1 class="display-4">Internal Discussion</h1>
                 <hr class="mb-4" />
 
-                <!-- <div class="card mx-auto text-white bg-dark mb-5" style="width: 70%">
-                <h6 class="card-header font-weight-light mb-0 align-text-bottom">
-                    <b class="font-weight-bold">@{{comment.author}} </b><small class="text-muted"> ·
-                        {{tweet.created_at}}</small>
-                    <a class="close text-muted" href="/delete?id={{comment.id}}"><small>x</small></a>
-                </h6>
-                <div class="card-body">
-                    <p class="card-text">
-
-                    </p>
-                </div>
-            </div> -->
-
-                <form method="POST" action="/home/" class="my-5">
+                <form method="POST" action="chat.php" class="my-5">
                     <div class="form-group">
-                        <label>You are logged in as: <i>student1</i></label>
+                        <?php
+                        //display current user name
+                        echo "<label>You are logged in as: <i>" . $_SERVER['REMOTE_USER'] . "</i></label>";
+                        //create a user model with username
+                        //when send is clicked, store the word into db
+                        ?>
                         <textarea
-                            name="body"
+                            name="chatbody"
+                            type="text"
                             class="form-control"
                             placeholder="How do you think of this project...."
                             rows="4"
                             style="border-color: #a7a7a7;"
                         ></textarea>
                     </div>
-                    <button type="button" class="btn btn-outline-dark btn-sm">Send Comment</button>
+                    <button type="submit" class="btn btn-outline-dark btn-sm">Send Chat</button>
                 </form>
 
                 <div class="card mx-auto mb-4" style="width: 100%;">
                     <h6 class="card-header mb-0 align-text-bottom">
                         <b class="font-weight-bold"> student1 </b><small class="text-muted"> 08/15 </small>
-                        <a class="close text-muted" href="/delete?id={{comment.id}}"><small>x</small></a>
+                        <a class="close text-muted"><small>x</small></a>
                     </h6>
                     <div class="card-body">
                         <p class="card-text">
@@ -92,7 +85,7 @@
                 <div class="card mx-auto mb-4" style="width: 100%;">
                     <h6 class="card-header mb-0 align-text-bottom">
                         <b class="font-weight-bold"> student2 </b><small class="text-muted"> 08/07 </small>
-                        <a class="close text-muted" href="/delete?id={{comment.id}}"><small>x</small></a>
+                        <a class="close text-muted"><small>x</small></a>
                     </h6>
                     <div class="card-body">
                         <p class="card-text">
@@ -103,7 +96,7 @@
                 <div class="card mx-auto mb-4" style="width: 100%;">
                     <h6 class="card-header mb-0 align-text-bottom">
                         <b class="font-weight-bold"> student3 </b><small class="text-muted"> 08/05 </small>
-                        <a class="close text-muted" href="/delete?id={{comment.id}}"><small>x</small></a>
+                        <a class="close text-muted"><small>x</small></a>
                     </h6>
                     <div class="card-body">
                         <p class="card-text">
@@ -139,7 +132,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <img style="width: 100%; max-width: 700px;" src="images/Logos-white.png" />
+                    <img style="width: 100%; max-width: 700px;" src="/images/Logos-white.png" />
                 </div>
             </div>
         </footer>
