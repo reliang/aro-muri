@@ -55,21 +55,16 @@
                 <hr class="mb-4" />
 
                 <form method="POST" action="insertChat.php" class="my-5">
-                    <div class="form-group">
-                        <?php
-                        //display current user name
-                        echo "<label>Welcome. You are logged in as: <i>" . $_SERVER['REMOTE_USER'] . "</i></label>";
-                        ?>
+                    <div class="form-group">  
                         <textarea
                             name="chatbody"
                             type="text"
                             class="form-control"
-                            placeholder="How do you think of this project...."
                             rows="4"
                             style="border-color: #a7a7a7;"
                         ></textarea>
                     </div>
-                    <button type="submit" class="btn btn-outline-dark btn-sm">Send Chat</button>
+                    <button type="submit" class="btn btn-outline-dark btn-sm">Send</button>
                 </form>
 
                 <?php
@@ -107,8 +102,8 @@
                             }
                         }
                 ?>
-
-                <div class="card mx-auto mb-4" style="width: 100%;">
+                <!-- card placeholder-->
+                <!-- <div class="card mx-auto mb-4" style="width: 100%;">
                     <h6 class="card-header mb-0 align-text-bottom">
                         <b class="font-weight-bold"> Admin </b><small class="text-muted"> 2020-08-20 11:01:10 </small>
                         <a class="close text-muted"><small>x</small></a>
@@ -118,7 +113,7 @@
                             Leave a comment here!
                         </p>
                     </div>
-                </div>
+                </div> -->
             </section>
         </div>
 
@@ -127,22 +122,22 @@
                 <div class="row">
                     <div class="col-md-4">
                         <p class="lead">
+                            wng@cis.upenn.edu<br />
+                            (215) 898-8543
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="lead">
                             University of Pennsylvania<br />
                             3330 Walnut Street<br />
-                            Levine Hall Room 302<br />
                             Philadelphia, PA 19104
                         </p>
                     </div>
-                    <div class="col-md-4">
-                        <p class="lead">
-                            (215) 898-8543<br />
-                            Contact: mailto:wng@cis.upenn.edu
-                        </p>
-                    </div>
+
                     <div class="col-md-4">
                         <p class="lead">
                             Copyright &#169; 2020 PRECISE<br />
-                            All Rights Reserved.
+                            All Rights Reserved
                         </p>
                     </div>
                 </div>
