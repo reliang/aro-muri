@@ -83,11 +83,16 @@
                             $items = array_reverse($items ,true);
                             
                             foreach($items as $item){
+                                $name = $item['user_first'] . " " . $item['user_last'];
+                                if (!$item['user_first'] || !$item['user_last']) {
+                                    $name = $item['pennKey'];
+                                }
+                                $date = new DateTime($item['last_updated']);
                                 echo 
                             '<form method = "post" action = "deleteChat.php">
                             <div class="card mx-auto mb-4" style="width: 100%;">
                             <h6 class="card-header mb-0 align-text-bottom">
-                            <b class="font-weight-bold">' . $item["user_first"] . '&nbsp;' . $item["user_last"] . '&nbsp&nbsp;</b><small class="text-muted">' . $item["last_updated"] . '</small> 
+                            <b class="font-weight-bold">' . $name . '&nbsp&nbsp;</b><small class="text-muted">' . date_format($date, 'm/d/Y  g:i A') . '</small> 
                                     <input class="closeBtn close text-muted" name="delete" type="submit"id="delete"value="x">
                                     <input type="hidden" name="chat_id" value='.$item["chat_id"].'></input>
                                     <input type="hidden" name="pennID" value='.$item["pennID"].'> </input>
@@ -114,6 +119,8 @@
                         </p>
                     </div>
                 </div>
+            </section>
+        </div>
 
         <footer>
             <div class="container">
