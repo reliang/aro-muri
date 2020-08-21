@@ -33,12 +33,18 @@ p {
     font-weight: 200;
 }
 
-li, table {
+li,
+table {
     font-weight: 200;
 }
 
 .content {
     line-height: 2;
+}
+
+.closeBtn {
+    border: 0px splid transparent !important;
+    font-size: smaller;
 }
 
 hr {

@@ -1,3 +1,6 @@
+<?php
+	include_once 'mysqli_connect.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -51,13 +54,11 @@
                 <h1 class="display-4">Internal Discussion</h1>
                 <hr class="mb-4" />
 
-                <form method="POST" action="chat.php" class="my-5">
+                <form method="POST" action="insertChat.php" class="my-5">
                     <div class="form-group">
                         <?php
                         //display current user name
-                        echo "<label>You are logged in as: <i>" . $_SERVER['REMOTE_USER'] . "</i></label>";
-                        //create a user model with username
-                        //when send is clicked, store the word into db
+                        echo "<label>You are logged in as: <i>" . $_SERVER['REMOTE_USER'] . "</i></label></br>";
                         ?>
                         <textarea
                             name="chatbody"
@@ -71,41 +72,48 @@
                     <button type="submit" class="btn btn-outline-dark btn-sm">Send Chat</button>
                 </form>
 
+                <?php
+                    $sql = "SELECT * FROM chats;";
+                    $result = mysqli_query($conn, $sql);
+                    $resultCheck = mysqli_num_rows($result);
+                        if($resultCheck > 0) {
+                            while($row = mysqli_fetch_assoc($result)){
+                                $items[] = $row;
+                            }
+                            $items = array_reverse($items ,true);
+                            
+                            foreach($items as $item){
+                                echo 
+                            '<form method = "post" action = "deleteChat.php">
+                            <div class="card mx-auto mb-4" style="width: 100%;">
+                            <h6 class="card-header mb-0 align-text-bottom">
+                            <b class="font-weight-bold">' . $item["user_first"] . '&nbsp;' . $item["user_last"] . '&nbsp&nbsp;</b><small class="text-muted">' . $item["last_updated"] . '</small> 
+                                    <input class="closeBtn close text-muted" name="delete" type="submit"id="delete"value="x">
+                                    <input type="hidden" name="chat_id" value='.$item["chat_id"].'></input>
+                                    <input type="hidden" name="pennID" value='.$item["pennID"].'> </input>
+                                    </h6>
+                                <div class="card-body"> 
+                                <p class="card-text">' .
+                                    $item["chat"] .
+                                    '</p>
+                                </div>
+                            </div>
+                            </form>';
+                            }
+                        }
+                ?>
+
                 <div class="card mx-auto mb-4" style="width: 100%;">
                     <h6 class="card-header mb-0 align-text-bottom">
-                        <b class="font-weight-bold"> student1 </b><small class="text-muted"> 08/15 </small>
+                        <b class="font-weight-bold"> Admin </b><small class="text-muted"> 2020-08-20 11:01:10 </small>
                         <a class="close text-muted"><small>x</small></a>
                     </h6>
                     <div class="card-body">
                         <p class="card-text">
-                            Chat1
+                            Leave a comment here!
                         </p>
                     </div>
                 </div>
-                <div class="card mx-auto mb-4" style="width: 100%;">
-                    <h6 class="card-header mb-0 align-text-bottom">
-                        <b class="font-weight-bold"> student2 </b><small class="text-muted"> 08/07 </small>
-                        <a class="close text-muted"><small>x</small></a>
-                    </h6>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Chat2
-                        </p>
-                    </div>
-                </div>
-                <div class="card mx-auto mb-4" style="width: 100%;">
-                    <h6 class="card-header mb-0 align-text-bottom">
-                        <b class="font-weight-bold"> student3 </b><small class="text-muted"> 08/05 </small>
-                        <a class="close text-muted"><small>x</small></a>
-                    </h6>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Chat3
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
 
         <footer>
             <div class="container">
