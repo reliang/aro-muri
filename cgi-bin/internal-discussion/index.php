@@ -58,7 +58,7 @@
                     <div class="form-group">
                         <?php
                         //display current user name
-                        echo "<label>You are logged in as: <i>" . $_SERVER['REMOTE_USER'] . "</i></label></br>";
+                        echo "<label>Welcome. You are logged in as: <i>" . $_SERVER['REMOTE_USER'] . "</i></label>";
                         ?>
                         <textarea
                             name="chatbody"

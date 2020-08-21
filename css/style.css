@@ -33,6 +33,15 @@ p {
     font-weight: 200;
 }
 
+.lead {
+    font-weight: 200 !important;
+    font-size: 100% !important;
+}
+
+label {
+    font-weight: 200 !important;
+}
+
 li,
 table {
     font-weight: 200;
@@ -43,8 +52,18 @@ table {
 }
 
 .closeBtn {
-    border: 0px splid transparent !important;
-    font-size: smaller;
+    border: 0px transparent !important;
+    font-size: medium !important;
+    font-weight: 200 !important;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 200 !important;
+    font-style: italic !important;
+    color: rgb(151, 151, 151) !important;
+}
+textarea {
+    font-weight: 200 !important;
 }
 
 hr {
