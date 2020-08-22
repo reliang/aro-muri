@@ -24,11 +24,12 @@
 
 			//send an email to aro-muri@seas.upenn.edu
 			$to = "pqy@seas.upenn.edu";
-			$subject = "ARO-MURI: A new announcement is made.";
-			$message = "<p> A new announcement is made: ".$chat;
-			$message .= "<br>Click here to check: https://aro-muri2020.seas.upenn.edu/cgi-bin/internal-discussion</p>";
+			$subject = "New Message Notification on Penn’s ARO-MURI website!";
+			$message = "<b><u>Robust Concept Learning and Lifelong Adaptation against Adversarial Attacks</b></u>
+			<br><br>To read the latest message(s), please go to: https://aro-muri2020.seas.upenn.edu/cgi-bin/internal-discussion
+			<br>Thanks for your attention!";
 			$header = "From:am2020@seas.upenn.edu \r\n";
-			//$header .= "Cc:reliang@seas.upenn.edu, wng@seas.upenn.edu \r\n";
+			$header .= "Cc:reliang@seas.upenn.edu, wng@seas.upenn.edu \r\n";
 			$header .= "MIME-Version: 1.0\r\n";
 			$header .= "Content-type: text/html\r\n";
 			
