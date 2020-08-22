@@ -28,19 +28,20 @@
 			$message = "<p> A new announcement is made: ".$chat;
 			$message .= "<br>Click here to check: https://aro-muri2020.seas.upenn.edu/cgi-bin/internal-discussion</p>";
 			$header = "From:am2020@seas.upenn.edu \r\n";
-			$header .= "Cc:reliang@seas.upenn.edu, wng@seas.upenn.edu \r\n";
+			//$header .= "Cc:reliang@seas.upenn.edu, wng@seas.upenn.edu \r\n";
 			$header .= "MIME-Version: 1.0\r\n";
 			$header .= "Content-type: text/html\r\n";
 			
 			$retval = mail ($to,$subject,$message,$header);
 			
-			if( $retval == true ) {
-			   echo "Message sent successfully...";
-			}else {
-			   echo "Message could not be sent...";
-			}
+			// if( $retval == true ) {
+			//    echo "Message sent successfully...";
+			// }else {
+			//    echo "Message could not be sent...";
+			// }
+
 			//send an email to aro-muri@seas.upenn.edu
-			header("Location: index.php?insert=success");
+			header("Location: index.php?send=success");
 		} else {
 			header("");
 		}
