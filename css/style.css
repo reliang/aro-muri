@@ -90,21 +90,21 @@ img {
 .header-neural1 {
     position: absolute; /* absolute position ignores css grid */
     width: 12vw;
-    left: 18vw;
+    left: 16vw;
     top: -5.5vw;
 }
 
 .header-neural2 {
     position: absolute; /* absolute position ignores css grid */
-    width: 10vw;
-    left: 62vw;
-    top: 8vw;
+    width: 9.5vw;
+    left: 63vw;
+    top: 8.5vw;
 }
 
 .header-shield {
     position: absolute; /* absolute position ignores css grid */
     width: 18vw;
-    left: 71vw;
+    left: 72.5vw;
     top: 1.5vw;
 }
 
@@ -179,7 +179,7 @@ section {
     grid-column: 2;
     grid-row: 1;
     width: 100%;
-    margin-top: 18vmax; /* account for header */
+    margin-top: 19vmax; /* account for header */
     margin-bottom: 8vmax;
 }
 
