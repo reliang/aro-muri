@@ -8,28 +8,29 @@ body {
     min-width: 100%;
     max-width: none;
     height: 110%;
+    margin-top: 5rem;
 }
 
 .header-index {
     position: absolute; /* absolute position ignores css grid */
-    width: 50%;
+    width: 65%;
     /* center vertically */
-    left: 50%;
+    left: 10%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 }
 
 .neural-shield {
     position: absolute; /* absolute position ignores css grid */
     width: 9%;
-    top: 0%;
+    top: 5rem;
     left: 20%;
 }
 
 .neural1 {
     position: absolute; /* absolute position ignores css grid */
     width: 17%;
-    top: 5%;
+    top: 6rem;
     left: 18%;
 }
 
@@ -45,14 +46,15 @@ body {
     position: absolute; /* absolute position ignores css grid */
     width: 60%;
     right: -15%;
+    top: 5rem;
     opacity: 50%;
 }
 
 .child-graphic {
     position: absolute; /* absolute position ignores css grid */
-    width: 38%;
+    width: 350px;
     /* width: 45%; */
-    right: -15%;
+    right: -175px;
     /* center vertically */
     top: 50%;
     transform: translateY(-50%);
@@ -73,4 +75,64 @@ nav a, nav a:visited {
 nav a:hover, nav a:active {
     color: #75eceb;
     text-decoration: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-bg {
+        min-width: 100%;
+        max-width: none;
+        height: 110%;
+        margin-top: 0;
+    }
+
+    .header-index {
+        position: absolute; /* absolute position ignores css grid */
+        width: 50%;
+        /* center vertically */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .neural-shield {
+        position: absolute; /* absolute position ignores css grid */
+        width: 9%;
+        top: 0%;
+        left: 20%;
+    }    
+
+    .neural1 {
+        position: absolute; /* absolute position ignores css grid */
+        width: 17%;
+        top: 5%;
+        left: 18%;
+    }
+    
+    .neural2 {
+        position: absolute; /* absolute position ignores css grid */
+        width: 17%;
+        left: 62%;
+        bottom: 6%;
+        transform: rotate(-20deg);
+    }
+
+    .numbers {
+        position: absolute; /* absolute position ignores css grid */
+        width: 60%;
+        right: -15%;
+        top: 0;
+        opacity: 50%;
+    }
+
+    .child-graphic {
+        position: absolute; /* absolute position ignores css grid */
+        width: 38%;
+        /* width: 45%; */
+        right: -15%;
+        /* center vertically */
+        top: 50%;
+        transform: translateY(-50%);
+        /* bottom: -20vw; */
+    }
 }

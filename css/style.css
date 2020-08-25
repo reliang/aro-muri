@@ -1,13 +1,18 @@
+body {
+}
+
 /* use CSS grid to section content vs nav/header */
 .page-grid {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    position: relative;
+    margin-top: 5rem;
+    grid-template-columns: 10% 80% 8%;
     grid-template-rows: auto;
     column-gap: 2%;
 }
 
 h1.display-4 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 100;
 }
 
@@ -78,72 +83,68 @@ img {
     position: absolute; /* absolute position ignores css grid */
     width: 100vw;
     max-width: 100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
+    min-height: 20vmax;
     z-index: -1;
 }
 
 .header-title {
-    position: absolute; /* absolute position ignores css grid */
-    width: 100vw;
-    max-width: 100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-neural1 {
     position: absolute; /* absolute position ignores css grid */
     width: 12vw;
-    left: 16vw;
+    left: 2vw;
     top: -5.5vw;
 }
 
 .header-neural2 {
     position: absolute; /* absolute position ignores css grid */
     width: 9.5vw;
-    left: 63vw;
+    left: 72vw;
     top: 8.5vw;
 }
 
 .header-shield {
     position: absolute; /* absolute position ignores css grid */
     width: 18vw;
-    left: 72.5vw;
+    left: 80vw;
     top: 1.5vw;
 }
 
-.nav-container {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%; /* account for width of first column */
+.mobile-menu {
+    background-color: rgb(0, 0, 0);
+    background-image: none;
+    padding: 1rem 10% 1.5rem 10%;
+    border: 0px;
+    -webkit-backface-visibility: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.mobile-menu .navbar-collapse {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.mobile-menu ul {
+    position: relative;
+    margin-top: 15px;
 }
 
 /* The actual timeline (the vertical ruler) */
-nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    margin: 0 0 8vmax 4vw;
-    padding-top: 12.5vmax;
-}
-
-nav a,
-nav a:visited {
-    color: rgba(0, 0, 0);
-}
-
-nav a:hover,
-nav a:active {
-    color: #00566b;
-    text-decoration: none;
-}
-
-.nav-selected {
-    font-size: 2em;
-    font-weight: 100;
-}
-
-/* The actual timeline (the vertical ruler) */
-nav::after {
+.mobile-menu ul::after {
     content: "";
     position: absolute;
-    width: 2px;
+    width: 1px;
     background-color: white;
     border: 1px solid lightgray;
     top: 0;
@@ -151,28 +152,142 @@ nav::after {
     left: 0;
 }
 
-nav ul {
+.mobile-menu ul {
     list-style-type: none;
     padding-inline-start: 60px; /* corresponds w/ left of nav li::before */
 }
 
-nav li {
+.mobile-menu li {
     position: relative;
-    line-height: 1;
-    margin-bottom: 3em;
 }
 
 /* Create the custom list bullet */
-nav li::before {
+.mobile-menu li::before {
     content: "";
     display: block;
     position: absolute;
-    height: 3px;
+    height: 1px;
     width: 50px;
     background-color: white;
     border: 1px solid lightgray;
-    left: -60px; /* corresponds w/ padding-inlin-start of nav ul, offsets it */
+    left: -60px; /* corresponds w/ padding-inline-start of nav ul, offsets it */
     top: 55%;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .page-grid {
+        display: grid;
+        margin-top: 0;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: auto;
+        column-gap: 2%;
+    }
+
+    h1.display-4 {
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    
+    .header-bg {
+        min-height: none;
+    }
+    
+    .header-title {
+        position: absolute; /* absolute position ignores css grid */
+        grid-column: 1;
+        grid-row: 1;
+        width: 100vw;
+        max-width: 100%; /* makes sure 100vw doesn't overflow with vertical scrollbar */
+    }
+
+    .header-neural1 {
+        position: absolute; /* absolute position ignores css grid */
+        width: 12vw;
+        left: 16vw;
+        top: -5.5vw;
+    }
+    
+    .header-neural2 {
+        position: absolute; /* absolute position ignores css grid */
+        width: 9.5vw;
+        left: 63vw;
+        top: 8.5vw;
+    }
+    
+    .header-shield {
+        position: absolute; /* absolute position ignores css grid */
+        width: 18vw;
+        left: 72.5vw;
+        top: 1.5vw;
+    }
+
+    .nav-container {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%; /* account for width of first column */
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    nav {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        margin: 0 0 8vmax 4vw;
+        padding-top: 12.5vmax;
+    }
+
+    nav a,
+    nav a:visited {
+        color: rgba(0, 0, 0);
+    }
+
+    nav a:hover,
+    nav a:active {
+        color: #00566b;
+        text-decoration: none;
+    }
+
+    .nav-selected {
+        font-size: 2em;
+        font-weight: 100;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    nav::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        background-color: white;
+        border: 1px solid lightgray;
+        top: 0;
+        bottom: 0.5rem;
+        left: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding-inline-start: 4vw; /* corresponds w/ left of nav li::before */
+    }
+
+    nav li {
+        position: relative;
+        line-height: 1;
+        margin-bottom: 3em;
+    }
+
+    /* Create the custom list bullet */
+    nav li::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 3.5vw;
+        background-color: white;
+        border: 1px solid lightgray;
+        left: -4vw; /* corresponds w/ padding-inline-start of nav ul, offsets it */
+        top: 55%;
+    }
 }
 
 section {
