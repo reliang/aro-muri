@@ -63,9 +63,10 @@ body {
 
 .logos {
     position: absolute; /* absolute position ignores css grid */
-    width: 50%;
-    left: 2%;
+    width: 55%;
+    left: 50%; /* same as menu left-margin */
     bottom: 2%;
+    transform: translateX(-50%);
 }
 
 nav a, nav a:visited {
@@ -134,5 +135,12 @@ nav a:hover, nav a:active {
         top: 50%;
         transform: translateY(-50%);
         /* bottom: -20vw; */
+    }
+
+    nav li {
+        position: relative;
+        line-height: 1;
+        /* margin-bottom: 3em; */
+        margin-bottom: 6.5vh;
     }
 }

@@ -32,7 +32,7 @@
         <div class="d-block d-lg-none">
             <nav class="mobile-menu navbar navbar-dark fixed-top">
                 <a class="navbar-brand" href="/index.html">
-                    <img src="images/header-mobile.png" style="height: 20px; width: auto;">
+                    <img src="/images/header-mobile.png" style="height: 20px; width: auto;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,8 +70,8 @@
             <img class="header-neural1" src="/images/child-graphic-02.png" />
             <img class="header-neural2" src="/images/child-graphic-13-gradient.png" />
             <img class="header-shield" src="/images/logo-final.png" />
-            <span class="header-title d-none d-lg-block"><a href="index.html"><img src="/images/title-block-no-bg.png" /></a></span>
-            <span class="header-title d-block d-lg-none"><a href="index.html"><img src="/images/header-title.png" /></a></span>
+            <span class="header-title d-none d-lg-block"><a href="/index.html"><img src="/images/title-block-no-bg.png" /></a></span>
+            <span class="header-title d-block d-lg-none"><a href="/index.html"><img src="/images/header-title.png" /></a></span>
             <div class="d-none d-lg-block nav-container">
                 <nav>
                     <ul>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <img style="width: 100%; max-width: 700px;" src="/images/Logos-white.png" />
+                    <img src="/images/Logos-white.png" />
                 </div>
             </div>
         </footer>

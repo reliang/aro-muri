@@ -109,104 +109,29 @@
             <h1 class="display-4">Project Overview</h1>
             <hr class="mb-5" />
             <div class="content">
-                <div class="slideshow-container" style="position: relative;">
-                    <img class="slideshow" src="images/project-overview/Slide4.JPG" />
-                    <img class="slideshow" src="images/project-overview/Slide5.JPG" />
-                    <img class="slideshow" src="images/project-overview/Slide6.JPG" />
-                    <img class="slideshow" src="images/project-overview/Slide7.JPG" />
-                    <img class="slideshow" src="images/project-overview/Slide8.JPG" />
-                    <img class="slideshow" src="images/project-overview/Slide9.JPG" />
-                    <img class="slideshow" src="images/project-overview/Slide10.JPG" />
-                    <button class="arrow left" onclick="plusDivsManual(-1)">&#10094;</button>
-                    <button class="arrow right" onclick="plusDivsManual(1)">&#10095;</button>
-                </div>
-
-                <div class="text-center mb-5">
-                    <span class="dot" onclick="currentDiv(1)"></span>
-                    <span class="dot" onclick="currentDiv(2)"></span>
-                    <span class="dot" onclick="currentDiv(3)"></span>
-                    <span class="dot" onclick="currentDiv(4)"></span>
-                    <span class="dot" onclick="currentDiv(5)"></span>
-                    <span class="dot" onclick="currentDiv(6)"></span>
-                    <span class="dot" onclick="currentDiv(7)"></span>
-                </div>
-                <script>
-                    var myTimer;
-                    var slideIndex = 1;
-
-                    /* Initialize */
-                    plusDivs(0);
-                    /* Slideshow pause on mouse hover */
-                    var slideshowContainer = document.getElementsByClassName("slideshow-container")[0];
-                    slideshowContainer.addEventListener("mouseenter", pause);
-                    slideshowContainer.addEventListener("mouseleave", resume);
-
-                    function pause() {
-                        clearInterval(myTimer);
-                    }
-
-                    function resume() {
-                        clearInterval(myTimer);
-                        myTimer = setInterval(function () {
-                            plusDivs(1);
-                        }, 4000);
-                    }
-
-                    function plusDivs(n) {
-                        clearInterval(myTimer);
-                        showDivs((slideIndex += n));
-                        myTimer = setInterval(function () {
-                            plusDivs(1);
-                        }, 4000);
-                    }
-
-                    function plusDivsManual(n) {
-                        clearInterval(myTimer);
-                        showDivs((slideIndex += n));
-                    }
-
-                    function showDivs(n) {
-                        var i;
-                        var x = document.getElementsByClassName("slideshow");
-                        if (n > x.length) {
-                            slideIndex = 1;
-                        }
-                        if (n < 1) {
-                            slideIndex = x.length;
-                        }
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
-                        }
-                        x[slideIndex - 1].style.display = "block";
-
-                        /* change dot color */
-                        var dots = document.getElementsByClassName("dot");
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" filled", "");
-                        }
-                        dots[slideIndex - 1].className += " filled";
-                    }
-
-                    /* function attached to dots */
-                    function currentDiv(n) {
-                        clearInterval(myTimer);
-                        showDivs((slideIndex = n));
-                        myTimer = setInterval(function () {
-                            plusDivs(1);
-                        }, 4000);
-                    }
-                </script>
+                <img class="slideshow" src="images/project-overview/Slide4.JPG" />
                 <p>
                     This research project addresses the design and analysis of robust and adaptive machine learning
-                    based on how children learn.
-                    Learning systems are vulnerable to adversarial inputs that are malicious (e.g., image tampering) and
+                    based on how children learn. Learning systems are vulnerable to adversarial inputs that are malicious (e.g., image tampering) and
                     non-malicious (e.g.,
-                    dynamic environments). Moreover, these adversarial inputs can affect the learning systems at
+                    dynamic environments).
+                </p>
+                <img class="slideshow" src="images/project-overview/Slide5.JPG" />
+                <p>
+                    Moreover, these adversarial inputs can affect the learning systems at
                     design-time (i.e., in the
-                    training data) and runtime (i.e., in the test data). Providing predictive analytics that deliver
+                    training data) and runtime (i.e., in the test data). 
+                </p>
+                <img class="slideshow" src="images/project-overview/Slide6.JPG" />
+                <p>
+                    Providing predictive analytics that deliver
                     intelligent services in an
                     adversarial setting requires cross-thrust research addressing fundamental adversarial learning
-                    challenges. First, modern
+                    challenges. 
+                </p>
+                <img class="slideshow" src="images/project-overview/Slide7.JPG" />
+                <p>
+                    First, modern
                     machine learning generally lack adversarial robustness, both at design-time and run-time, where
                     state-of-the-art approaches
                     tend to perform substantially worse in the presence of adversarial examples such as sensor noise
@@ -224,6 +149,7 @@
                     robustness of concept- based learning, which is challenging in dynamically evolving systems based on
                     the sensed environment.
                 </p>
+                <img class="slideshow" src="images/project-overview/Slide8.JPG" />
                 <p>
                     In this project, we aim to develop the foundations for robust and adaptive learning based on
                     childhood development consisting
@@ -231,6 +157,7 @@
                     II) Adaptive Learning in
                     Dynamic Environments; and (Thrust III) Verification and Monitoring of Learning.
                 </p>
+                <img class="slideshow" src="images/project-overview/Slide10.JPG" />
             </div>
         </section>
     </div>
@@ -260,7 +187,7 @@
                 </div>
             </div>
             <div class="row">
-                <img style="width: 100%; max-width: 700px;" src="/images/Logos-white.png" />
+                <img src="images/Logos-white.png" />
             </div>
         </div>
     </footer>
