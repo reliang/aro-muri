@@ -41,8 +41,8 @@
                     <ul>
                         <li><a href="/overview.html">Project Overview</a></li>
                         <li><a href="/people.html">People</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Paper</a></li>
+                        <li><a href="/projects.html">Projects</a></li>
+                        <li><a href="/paper.html">Paper</a></li>
                         <li><a href="/events.html">Meetings/ Events</a></li>
                         <li><a href="/cgi-bin/reading-group.html">Reading Group</a></li>
                         <li><a href="/cgi-bin/internal-discussion" class="nav-selected display-4">Internal<br />Discussion</a>
