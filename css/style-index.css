@@ -8,28 +8,39 @@ body {
     min-width: 100%;
     max-width: none;
     height: 110%;
+    margin-top: 5rem;
 }
 
 .header-index {
     position: absolute; /* absolute position ignores css grid */
-    width: 50%;
+    width: 65%;
     /* center vertically */
-    left: 50%;
+    left: 10%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
 }
 
 .neural-shield {
     position: absolute; /* absolute position ignores css grid */
     width: 9%;
+<<<<<<< HEAD
     top: 0%;
     left: 22%;
+=======
+    top: 5rem;
+    left: 20%;
+>>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b
 }
 
 .neural1 {
     position: absolute; /* absolute position ignores css grid */
+<<<<<<< HEAD
     width: 10%;
     top: 11%;
+=======
+    width: 17%;
+    top: 6rem;
+>>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b
     left: 18%;
 }
 
@@ -46,14 +57,21 @@ body {
     position: absolute; /* absolute position ignores css grid */
     width: 60%;
     right: -15%;
+    top: 5rem;
     opacity: 50%;
 }
 
 .child-graphic {
     position: absolute; /* absolute position ignores css grid */
+<<<<<<< HEAD
     width: 45%;
     /* width: 45%; */
     right: -13.5%;
+=======
+    width: 350px;
+    /* width: 45%; */
+    right: -175px;
+>>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b
     /* center vertically */
     top: 55%;
     transform: translateY(-50%);
@@ -62,9 +80,10 @@ body {
 
 .logos {
     position: absolute; /* absolute position ignores css grid */
-    width: 50%;
-    left: 2%;
+    width: 55%;
+    left: 50%; /* same as menu left-margin */
     bottom: 2%;
+    transform: translateX(-50%);
 }
 
 nav a,
@@ -77,3 +96,73 @@ nav a:active {
     color: #75eceb;
     text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .header-bg {
+        min-width: 100%;
+        max-width: none;
+        height: 110%;
+        margin-top: 0;
+    }
+
+    .header-index {
+        position: absolute; /* absolute position ignores css grid */
+        width: 50%;
+        /* center vertically */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .neural-shield {
+        position: absolute; /* absolute position ignores css grid */
+        width: 9%;
+        top: 0%;
+        left: 20%;
+    }    
+
+    .neural1 {
+        position: absolute; /* absolute position ignores css grid */
+        width: 17%;
+        top: 5%;
+        left: 18%;
+    }
+    
+    .neural2 {
+        position: absolute; /* absolute position ignores css grid */
+        width: 17%;
+        left: 62%;
+        bottom: 6%;
+        transform: rotate(-20deg);
+    }
+
+    .numbers {
+        position: absolute; /* absolute position ignores css grid */
+        width: 60%;
+        right: -15%;
+        top: 0;
+        opacity: 50%;
+    }
+
+    .child-graphic {
+        position: absolute; /* absolute position ignores css grid */
+        width: 38%;
+        /* width: 45%; */
+        right: -15%;
+        /* center vertically */
+        top: 50%;
+        transform: translateY(-50%);
+        /* bottom: -20vw; */
+    }
+
+    nav li {
+        position: relative;
+        line-height: 1;
+        /* margin-bottom: 3em; */
+        margin-bottom: 6.5vh;
+    }
+}
+>>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b
