@@ -47,10 +47,10 @@
                             <a class="nav-link" href="/people.html">People</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="/projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Paper</a>
+                            <a class="nav-link" href="/paper.html">Paper</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/events.html">Meetings/Events</a>

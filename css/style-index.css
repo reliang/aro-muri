@@ -23,24 +23,14 @@ body {
 .neural-shield {
     position: absolute; /* absolute position ignores css grid */
     width: 9%;
-<<<<<<< HEAD
     top: 0%;
     left: 22%;
-=======
-    top: 5rem;
-    left: 20%;
->>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b
 }
 
 .neural1 {
     position: absolute; /* absolute position ignores css grid */
-<<<<<<< HEAD
     width: 10%;
     top: 11%;
-=======
-    width: 17%;
-    top: 6rem;
->>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b
     left: 18%;
 }
 
@@ -63,15 +53,9 @@ body {
 
 .child-graphic {
     position: absolute; /* absolute position ignores css grid */
-<<<<<<< HEAD
     width: 45%;
     /* width: 45%; */
     right: -13.5%;
-=======
-    width: 350px;
-    /* width: 45%; */
-    right: -175px;
->>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b
     /* center vertically */
     top: 55%;
     transform: translateY(-50%);
@@ -96,8 +80,6 @@ nav a:active {
     color: #75eceb;
     text-decoration: none;
 }
-<<<<<<< HEAD
-=======
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -121,22 +103,23 @@ nav a:active {
         position: absolute; /* absolute position ignores css grid */
         width: 9%;
         top: 0%;
-        left: 20%;
-    }    
+        left: 22%;
+    }
 
     .neural1 {
         position: absolute; /* absolute position ignores css grid */
-        width: 17%;
-        top: 5%;
+        width: 10%;
+        top: 11%;
         left: 18%;
     }
-    
+
     .neural2 {
         position: absolute; /* absolute position ignores css grid */
-        width: 17%;
+        width: 15%;
         left: 62%;
-        bottom: 6%;
-        transform: rotate(-20deg);
+        bottom: -5%;
+        /* transform: rotate(-20deg); */
+        visibility: hidden;
     }
 
     .numbers {
@@ -149,11 +132,11 @@ nav a:active {
 
     .child-graphic {
         position: absolute; /* absolute position ignores css grid */
-        width: 38%;
+        width: 45%;
         /* width: 45%; */
-        right: -15%;
+        right: -13.5%;
         /* center vertically */
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
         /* bottom: -20vw; */
     }
@@ -165,4 +148,3 @@ nav a:active {
         margin-bottom: 6.5vh;
     }
 }
->>>>>>> 5ab849e7c0d208b967daeeab642e3cd0316f5c3b

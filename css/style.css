@@ -1,3 +1,6 @@
+body {
+}
+
 /* use CSS grid to section content vs nav/header */
 .page-grid {
     display: grid;
@@ -104,7 +107,7 @@ img {
 .header-neural2 {
     position: absolute; /* absolute position ignores css grid */
     width: 9.5vw;
-    left: 65vw;
+    left: 70vw;
     top: 11.5vw;
     transform: rotate(20deg);
 }
@@ -202,21 +205,22 @@ img {
     .header-neural1 {
         position: absolute; /* absolute position ignores css grid */
         width: 12vw;
-        left: 16vw;
-        top: -5.5vw;
+        left: 14vw;
+        top: -0.8vw;
     }
 
     .header-neural2 {
         position: absolute; /* absolute position ignores css grid */
         width: 9.5vw;
-        left: 63vw;
-        top: 8.5vw;
+        left: 70vw;
+        top: 11.5vw;
+        transform: rotate(20deg);
     }
 
     .header-shield {
         position: absolute; /* absolute position ignores css grid */
         width: 18vw;
-        left: 72.5vw;
+        left: 78vw;
         top: 1.5vw;
     }
 
