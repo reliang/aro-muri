@@ -13,25 +13,27 @@ body {
 
 .header-index {
     position: absolute; /* absolute position ignores css grid */
-    width: 65%;
+    width: 62%;
     /* center vertically */
-    left: 10%;
-    top: 50%;
+    left: 8%;
+    top: 55%;
     transform: translateY(-50%);
 }
 
 .neural-shield {
     position: absolute; /* absolute position ignores css grid */
-    width: 9%;
-    top: 0%;
-    left: 22%;
+    width: 75px;
+    top: 25%;
+    left: 150px;
+    transform: translateY(-50%);
 }
 
 .neural1 {
     position: absolute; /* absolute position ignores css grid */
-    width: 10%;
-    top: 11%;
-    left: 18%;
+    width: 125px;
+    top: 30%;
+    left: 50px;
+    transform: translateY(-50%);
 }
 
 .neural2 {
@@ -40,7 +42,7 @@ body {
     left: 62%;
     bottom: -5%;
     /* transform: rotate(-20deg); */
-    visibility: hidden;
+    display:none;
 }
 
 .numbers {
@@ -53,9 +55,9 @@ body {
 
 .child-graphic {
     position: absolute; /* absolute position ignores css grid */
-    width: 45%;
+    width: 440px;
     /* width: 45%; */
-    right: -13.5%;
+    right: -150px;
     /* center vertically */
     top: 55%;
     transform: translateY(-50%);
@@ -101,15 +103,17 @@ nav a:active {
 
     .neural-shield {
         position: absolute; /* absolute position ignores css grid */
-        width: 9%;
-        top: 0%;
-        left: 22%;
+        width: 8%;
+        top: 10%;
+        transform: translateY(-50%);
+        left: 25%;
     }
 
     .neural1 {
         position: absolute; /* absolute position ignores css grid */
-        width: 10%;
-        top: 11%;
+        width: 15%;
+        top: 20%;
+        transform: translateY(-50%);
         left: 18%;
     }
 
@@ -119,7 +123,7 @@ nav a:active {
         left: 62%;
         bottom: -5%;
         /* transform: rotate(-20deg); */
-        visibility: hidden;
+        display:none;
     }
 
     .numbers {
@@ -132,11 +136,11 @@ nav a:active {
 
     .child-graphic {
         position: absolute; /* absolute position ignores css grid */
-        width: 45%;
+        width: 46%;
         /* width: 45%; */
         right: -13.5%;
         /* center vertically */
-        top: 55%;
+        top: 50%;
         transform: translateY(-50%);
         /* bottom: -20vw; */
     }
