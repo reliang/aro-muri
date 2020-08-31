@@ -69,6 +69,7 @@
             <img class="header-bg" src="/images/title-bg.png" />
             <img class="header-neural1" src="/images/child-graphic-02.png" />
             <img class="header-neural2" src="/images/child-graphic-13-gradient.png" />
+            <img class="header-numbers" src="/images/number-graphic.png" />
             <img class="header-shield" src="/images/logo-final.png" />
             <span class="header-title d-none d-lg-block"><a href="/index.html"><img src="/images/title-block-no-bg.png" /></a></span>
             <span class="header-title d-block d-lg-none"><a href="/index.html"><img src="/images/header-title.png" /></a></span>
