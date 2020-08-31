@@ -26,9 +26,9 @@
 			$to = "aro-muri@seas.upenn.edu";//aro-muri list serv 
 			$subject = "New Message Notification on Penn’s ARO-MURI website!";
 			$message = "<b><u>Robust Concept Learning and Lifelong Adaptation against Adversarial Attacks</b></u>
-			<br><p>To read the latest message(s), please go to: <a style='text-decoration:none' href='https://aro-muri2020.seas.upenn.edu/cgi-bin/internal-discussion'>[Link]</a>
+			<br><p>To read the latest message(s), please go to <a style='text-decoration:none' href='https://aro-muri2020.seas.upenn.edu/cgi-bin/internal-discussion'>[Link]</a>
 			<br><br>Thanks for your attention to this matter!</p>";
-			$header = "From: ARO-MURI Site Admin <am2020@seas.upenn.edu> \r\n";
+			$header = "From: ARO-MURI Site Admin <aro-muri@seas.upenn.edu> \r\n";
 			$header .= "Cc:reliang@seas.upenn.edu, wng@seas.upenn.edu, pqy@seas.upenn.edu \r\n";
 			$header .= "MIME-Version: 1.0\r\n";
 			$header .= "Content-type: text/html\r\n";
