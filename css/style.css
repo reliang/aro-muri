@@ -19,6 +19,7 @@ h1.display-4 {
 h4.display-4 {
     font-size: 1.5rem;
     font-weight: 100;
+    color: black;
 }
 
 a,
@@ -362,8 +363,15 @@ a:active.button {
 }
 
 table ul {
-    padding-inline-start: 20px;
+    padding-inline-start: 15px;
 }
+
+ul {
+    padding-inline-start: 15px;
+}
+
+
+
 
 footer {
     width: 100%;
