@@ -183,6 +183,11 @@ img {
     top: 55%;
 }
 
+#img-source {
+    font-size: 0.8vw; 
+    line-height: 1.2;
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .page-grid {
@@ -366,6 +371,10 @@ footer {
     color: white;
     background-color: black;
     text-align: center;
+}
+
+footer .row {
+    align-items: flex-start; /* fixes stretched image on Safari */
 }
 
 footer img {
