@@ -56,6 +56,9 @@
                             <a class="nav-link" href="/events.html">Meetings/Events</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="/positions.html">Open Positions</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/cgi-bin/reading-group.html">Reading Group</a>
                         </li>
                         <li class="nav-item active">
@@ -81,6 +84,7 @@
                         <li><a href="/projects.html">Projects</a></li>
                         <li><a href="/paper.html">Paper</a></li>
                         <li><a href="/events.html">Meetings/ Events</a></li>
+                        <li><a href="/positions.html">Open Positions</a></li>
                         <li><a href="/cgi-bin/reading-group.html">Reading Group</a></li>
                         <li><a href="/cgi-bin/internal-discussion" class="nav-selected display-4">Internal<br />Discussion</a>
                         </li>
