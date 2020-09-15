@@ -6,5 +6,5 @@ ShibRequestSetting requireSession 1
 # PennKey authentication required, any valid PennKey:
 #Require shib-session
 # PennKey authentication required, limited to specific PennNames:
-Require shib-user reliang pqy arobey1 bjm carptj danroth eeaton elenimi iruchkin jasonyma kantaros kostas ksridhar lee lishuo1 mcleav meghnag obastani julip pelu pstefano ramneetk rivanov sangdonp sfpugh sm1 sokolsky sooyong duttaso tenak vilin weimerj wng xjiae yangy96
+Require shib-user reliang pqy estee813 arobey1 bjm carptj danroth eeaton elenimi iruchkin jasonyma kantaros kostas ksridhar lee lishuo1 mcleav meghnag obastani julip pelu pstefano ramneetk rivanov sangdonp sfpugh sm1 sohamdan sokolsky sooyong duttaso tenak vilin weimerj wng xjiae yangy96
 
