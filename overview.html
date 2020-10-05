@@ -89,6 +89,9 @@
                             <a class="nav-link" href="events.html">Meetings/Events</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="positions.html">Open Positions</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="/cgi-bin/reading-group.html">Reading Group</a>
                         </li>
                         <li class="nav-item">
@@ -118,6 +121,7 @@
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="paper.html">Paper</a></li>
                         <li><a href="events.html">Meetings/Events</a></li>
+                        <li><a href="positions.html">Open Positions</a></li>
                         <li><a href="/cgi-bin/reading-group.html">Reading Group</a></li>
                         <li><a href="/cgi-bin/internal-discussion">Internal Discussion</a></li>
                     </ul>
@@ -127,29 +131,38 @@
                 <h1 class="display-4">Project Overview</h1>
                 <hr class="mb-4" />
                 <div class="content">
-                    <p><a href="images/project-overview/abstract.pdf" target="_blank"><b>[Proposal]</b></a></p>
-                    <h4 class="display-4 mb-5" style="line-height: 2; font-family:'Homemade Apple';">
-                        This research project addresses the design and analysis of robust and adaptive machine learning based on how children learn.
-                    </h4>
+                    <p><a href="images/project-overview/abstract.pdf" target="_blank"><b>[Proposal Summary]</b></a></p>
+                    <div class="mb-5">
+                        <h4 class="display-4 d-inline" style="line-height: 2;">
+                            <img class="d-inline" style="height:2rem; width:auto;" src="images/project-overview/quotation.png">
+                            This research project addresses the design and analysis of robust and adaptive machine learning based on how children 
+                            <!-- Ensure end quotation doesn't end up in its own line -->
+                            <span class="d-inline-block">
+                                learn.
+                                <img class="d-inline" style="height:2rem; width:auto; transform:rotate(180deg);" src="images/project-overview/quotation.png">
+                            </span>
+                        </h4>
+                    </div>
                     <img class="slideshow mb-4" src="images/project-overview/Slide8.jpg" />
                     <p>
                         Learning systems are vulnerable to adversarial inputs that are malicious (e.g., image tampering) and non-malicious (e.g.,
                         dynamic environments).
                     </p>
-                
-                    <img class="slideshow mb-4" src="images/project-overview/Slide4-1.jpg" />
                     <p>
                         These adversarial inputs can affect the learning systems at design-time (i.e., in the training data) and runtime
                         (i.e., in the test data).
                     </p>
                     
                     <img class="slideshow mb-4" src="images/project-overview/Slide5.jpg" />
+                    <p>
+                        For real life example, see <a href="https://www.vox.com/recode/2020/2/19/21143933/tesla-artificial-intelligence-model-hacking-speeding" target="_blank">link</a>.
+                    </p>
                     <p class="mb-0">
                         We will provide predictive analytics to address all the fundamental adversarial learning challenges.
                     </p>
                     <ul>
                         <li>
-                            Thrust 1: Concept-based Learning Robust to Adversarial Examples (Lead: Bastani)
+                            <b>Thrust I: Concept-based Learning Robust to Adversarial Examples (Lead: Bastani)</b>
                             <ul>
                                 <li>Task I.1: Robust learning of visual object and scene representations (Daniilidis, Eaton, Bastani, Parish- Morris) </li>
                                 <li>Task I.2: Concept-based deep learning with inductive biases (Roth, Bastani, Daniilidis, Parish- Morris) </li>
@@ -158,7 +171,7 @@
                             </ul>
                         </li>
                         <li>
-                            Thrust II: Adaptive Learning in Dynamic Environments (Lead: Eaton)
+                            <b>Thrust II: Adaptive Learning in Dynamic Environments (Lead: Eaton)</b>
                             <ul>
                                 <li>Task II.1: Leveraging Inductive Biases for Adaptive Concept Learning (Bastani, Roth, Parish- Morris) </li>
                                 <li>Task II.2: Lifelong Learning (Eaton, Daniilidis, Parish-Morris) </li>
@@ -166,7 +179,7 @@
                             </ul>
                         </li>
                         <li>
-                            Thrust III: Verification and Monitoring of Learning (Lead: Weimer)
+                            <b>Thrust III: Verification and Monitoring of Learning (Lead: Weimer)</b>
                             <ul>
                                 <li>Task III.1: Verified learning (Weimer, Lee, Parish-Morris)</li>
                                 <li>Task III.2: Monitoring learning (Weimer, Lee, Parish-Morris) </li>
@@ -174,7 +187,7 @@
                             </ul>
                         </li>
                         <li>
-                            Thrust IV: Integration and Evaluation (Lead: Lee)
+                            <b>Thrust IV: Integration and Evaluation (Lead: Lee)</b>
                             <ul>
                                 <li>Toolset and dataset development</li>
                                 <li>Evaluation platform and scenarios</li>
@@ -187,6 +200,12 @@
 
         <footer>
             <div class="container">
+                <div class="mb-5">
+                    <p class="mb-0" style="font-size:1.5rem;">WE ARE HIRING!</p>
+                    <p style="line-height: 1;">
+                        Please contact Professor <a href="mailto:lee@cis.upenn.edu" target="_blank">Insup Lee</a> if you are interested in collaborating on this project.
+                    </p>
+                </div>
                 <div class="row">
                     <div class="col-md-4">
                         <p class="lead">

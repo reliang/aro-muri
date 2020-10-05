@@ -34,6 +34,18 @@ a:active {
     text-decoration: none;
 }
 
+footer a,
+footer a:visited {
+    color: #66c9c7;
+    font-weight: 200;
+}
+
+footer a:hover,
+footer a:active {
+    color: #007f9f;
+    text-decoration: none;
+}
+
 p {
     margin-bottom: 2em;
     font-weight: 200;
@@ -298,7 +310,7 @@ img {
         position: relative;
         line-height: 1;
         /* margin-bottom: 3em; */
-        margin-bottom: 6vh;
+        margin-bottom: 5vh;
     }
 
     /* Create the custom list bullet */

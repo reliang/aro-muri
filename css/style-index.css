@@ -5,6 +5,7 @@ body {
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
+    align-items: flex-start;
 }
 
 #index-container {
@@ -48,11 +49,10 @@ body {
 
 .neural2 {
     position: absolute; /* absolute position ignores css grid */
-    width: 15%;
-    left: 62%;
-    bottom: -5%;
+    width: 150px;
+    right: 150px;
+    bottom: 25%;
     /* transform: rotate(-20deg); */
-    display:none;
 }
 
 .numbers {
@@ -74,12 +74,34 @@ body {
     /* bottom: -20vw; */
 }
 
+.text-index {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    text-align: center;
+    color: white;
+}
+
 .logos {
     position: absolute; /* absolute position ignores css grid */
-    width: 55%;
+    width: 75%;
+    max-width: 775px;
     left: 50%; /* same as menu left-margin */
     bottom: 2%;
     transform: translateX(-50%);
+}
+
+a,
+a:visited {
+    color: #75eceb;
+}
+
+a:hover,
+a:active {
+    color: #00abd6;
+    text-decoration: none;
 }
 
 nav a,
@@ -129,11 +151,11 @@ nav a:active {
 
     .neural2 {
         position: absolute; /* absolute position ignores css grid */
-        width: 15%;
+        width: 20%;
+        right: auto;
         left: 62%;
-        bottom: -5%;
+        bottom: 20%;
         /* transform: rotate(-20deg); */
-        display:none;
     }
 
     .numbers {
@@ -155,10 +177,14 @@ nav a:active {
         /* bottom: -20vw; */
     }
 
+    .text-index {
+        width: 60%;
+    }
+
     nav li {
         position: relative;
         line-height: 1;
         /* margin-bottom: 3em; */
-        margin-bottom: 6.5vh;
+        margin-bottom: 5vh;
     }
 }
